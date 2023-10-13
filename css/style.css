@@ -4,11 +4,11 @@
 }
 
 header {
-    background-color: violet;
+    background-color: none;
     width: 100%;
     padding: 24;
     position: fixed;
-    top: 0;
+    top: 0%;
     left: 0;
     display: flex;
     flex-wrap: wrap;
@@ -47,7 +47,12 @@ header .class="menu-item" a {
     font-size: 18px;
     color: black;
 }
-
+.historia-video{
+    display: flex;
+    align-items: normal;
+    justify-content: space-between;
+    flex-direction: row;
+}
 h1,
 h2,
 h3,
@@ -64,9 +69,16 @@ ol {
 }
 
 p {
-    color: greenyellow;
+    color: orangered;
 }
+.sub-titulo{
+    color: lightgreen;
+    font-size: medium;
+    font-weight: 400px;
+    width: auto;
+    height: auto;
 
+}
 .encuesta {
     background-color: purple;
     margin: auto;
@@ -81,27 +93,34 @@ p {
 }
 
 body {
+    height: 100%;
+    width: 100%;
     background-image: url(../recursos/imagenes/fondo1.png);
     background-repeat: no-repeat;
     background-size: cover;
-
-    height: auto;
-    width: auto;
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin-top: 96px;
 }
-
 .botones-inicio {
-    position: ;
-
+    position:absolute;
+    bottom: 165px;
 }
-
 .incio-ol {
     list-style: none;
+    text-decoration: none;
 }
-
+.contenido-inicio{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    position: absolute;
+    bottom: 45px;
+}
 footer {
+    background-color: black;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -109,12 +128,11 @@ footer {
     position: absolute;
     bottom: 0;
 }
-
 * {
     margin: 0;
     padding: 0;
     font-family: seagramtfb, sans-serif, 'Zilla Slab', serif;
-    background-color: violet;
+    background-color:violet;
 }
 
 @media (max-width:375px) {
@@ -130,5 +148,3 @@ footer {
         justify-content: flex-start;
         align-items: center;
     }
-
-}
