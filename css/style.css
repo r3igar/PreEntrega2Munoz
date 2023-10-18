@@ -17,6 +17,7 @@ header {
     align-items: center;
     list-style: none;
     text-decoration-style: non;
+    grid-area: header;
 }
 
 header a {
@@ -54,11 +55,7 @@ header .class="menu-item" a {
     flex-direction: row;
 }
 h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h2{
     color: green;
 }
 
@@ -102,6 +99,7 @@ body {
     align-items: center;
     flex-direction: column;
     margin-top: 96px;
+    grid-area: body;
 }
 .botones-inicio {
     position:absolute;
@@ -127,6 +125,19 @@ footer {
     justify-content: flex-end;
     position: absolute;
     bottom: 0;
+    grid-area: footer;
+}
+.historia-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) ;
+    grid-template-rows: 75px 300px 40px ;
+    grid-template-areas: 
+    "nav header header header"
+    "nav main main main"
+    "nav footer footer footer"
+    ;
+
+
 }
 * {
     margin: 0;
