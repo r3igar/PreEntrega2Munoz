@@ -6,7 +6,7 @@
 header {
     background-color: none;
     width: 100%;
-    padding: 10 px;
+    padding: 20 px;
     position: fixed;
     top: 0%;
     left: 0;
@@ -137,9 +137,10 @@ footer {
 
 @media (max-width:375px) {
     header {
-        width: 100%;
+        width: 10px;
         height: auto;
         position: fixed;
+        padding: 20px;
         top: 0;
         left: 0;
         display: flex;
