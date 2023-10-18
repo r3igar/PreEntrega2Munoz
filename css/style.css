@@ -6,7 +6,7 @@
 header {
     background-color: none;
     width: 100%;
-    padding: 24;
+    padding: 10 px;
     position: fixed;
     top: 0%;
     left: 0;
@@ -24,8 +24,8 @@ header a {
 }
 
 header img {
-    width: 45px;
-    padding: 0px 20px;
+    width: 50px;
+    padding: 20px 20px;
 }
 
 header ol {
