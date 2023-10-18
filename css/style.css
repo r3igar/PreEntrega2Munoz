@@ -2,13 +2,11 @@
     font-family: seagramtfb;
     src: url("../recursos/fuentes/seagramtfb.ttf");
 }
-
 header {
     background-color: none;
     width: 100%;
-    padding: 20 px;
     position: fixed;
-    top: 0%;
+    top: 0;
     left: 0;
     display: flex;
     flex-wrap: wrap;
@@ -16,65 +14,60 @@ header {
     justify-content: flex-start;
     align-items: center;
     list-style: none;
-    text-decoration-style: non;
+    text-decoration: none;
     grid-area: header;
 }
-
 header a {
     text-decoration: none;
 }
-
 header img {
-    width: 50px;
-    padding: 20px 20px;
+    padding: 0px 20px;
+    width: 45px !important;
 }
-
+.logo{
+    padding: 0px 20px;
+    width: 45px;
+}
 header ol {
     list-style-type: none;
     display: flex;
     flex-direction: row;
-    padding: 0px 20px;
-
+    padding: 0 20px;
 }
-
 header ol li {
     padding: 0 10px;
-
 }
 
-header .class="menu-item" a {
+header .menu-item a {
     list-style-type: none;
     text-decoration: none;
     font-size: 18px;
     color: black;
 }
-.historia-video{
+.historia-video {
     display: flex;
-    align-items: normal;
+    align-items: center;
     justify-content: space-between;
     flex-direction: row;
 }
 h1,
-h2{
+h2 {
     color: green;
 }
-
 ol {
     color: purple;
     font-family: 'Zilla Slab', serif;
     font-weight: 400;
 }
-
 p {
     color: orangered;
 }
-.sub-titulo{
+.sub-titulo {
     color: lightgreen;
     font-size: medium;
-    font-weight: 400px;
+    font-weight: 400;
     width: auto;
     height: auto;
-
 }
 .encuesta {
     background-color: purple;
@@ -84,11 +77,9 @@ p {
     flex-wrap: nowrap;
     flex-direction: column;
 }
-
 .proximamente {
     background-color: darkred;
 }
-
 body {
     height: 100%;
     width: 100%;
@@ -102,14 +93,14 @@ body {
     grid-area: body;
 }
 .botones-inicio {
-    position:absolute;
+    position: absolute;
     bottom: 165px;
 }
-.incio-ol {
+.inicio-ol {
     list-style: none;
     text-decoration: none;
 }
-.contenido-inicio{
+.contenido-inicio {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -119,44 +110,54 @@ body {
 }
 footer {
     background-color: black;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-end;
-    position: absolute;
+    position: fixed;
     bottom: 0;
-    grid-area: footer;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
 }
-.historia-grid{
+.historia-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr) ;
-    grid-template-rows: 75px 300px 40px ;
-    grid-template-areas: 
-    "nav header header header"
-    "nav main main main"
-    "nav footer footer footer"
-    ;
-
-
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 75px 300px 40px;
+    grid-template-areas:
+        "nav header header header"
+        "nav main main main"
+        "nav footer footer footer";
 }
+/*celular*/
+@media (max-width: 768px) {
+    header {
+        padding: 10px;
+        flex-direction: column;
+    }
+
+    header img {
+        width: 30px;
+    }
+
+    header ol {
+        padding: 0;
+    }
+
+    header ol li {
+        padding: 5px 0;
+    }
+}
+
+/* notebooks */
+@media (min-width: 769px) and (max-width: 1200px) {
+    header {
+        padding: 20px;
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
     font-family: seagramtfb, sans-serif, 'Zilla Slab', serif;
-    background-color:violet;
+    background-color: violet;
 }
-
-@media (max-width:375px) {
-    header {
-        width: 10px;
-        height: auto;
-        position: fixed;
-        padding: 20px;
-        top: 0;
-        left: 0;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-    }
