@@ -1,0 +1,47 @@
+.personaje-good {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  /* Estilos para cada título (h3) */
+  .personaje-good h3,
+  .personajegoblin h3,
+  .personaje-lol h3 {
+    text-align: center; /* Centra el texto */
+    margin: 0;
+    padding: 10px;
+  }
+  
+  /* Estilos para los contenedores de tarjetas */
+  .tarjetas-personajes {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    overflow-x: auto;
+  }
+  
+  /* Estilos para cada grupo de tarjetas */
+  .personaje,
+  .personajegoblin,
+  .personaje-lol {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto; 
+    justify-content: space-between;
+    width: 100%;
+    margin: 10px;
+  }
+  
+  /* Estilos para cada tarjeta de personaje */
+  .personaje .card,
+  .personajegoblin .card,
+  .personaje-lol .card {
+    flex: 0 0 18rem;
+    margin-right: 10px;
+    background-color: #1B1919;
+  }
+iframe {
+    width: 100%;
+    height:315px;
+}

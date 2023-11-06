@@ -1,0 +1,43 @@
+header {
+  background-color: #1B1919;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  list-style: none;
+  text-decoration: none;
+  grid-area: header;
+}
+header a {
+  text-decoration: none;
+}
+header a img {
+  padding: 0px 20px;
+  width: 45px !important;
+}
+header a ol {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  padding: 0 20px;
+}
+header a ol li {
+  padding: 0 10px;
+}
+header a .menu-item a {
+  list-style-type: none;
+  text-decoration: none;
+  font-size: 18px;
+  color: #fff;
+}
+header a .titulo-header {
+  color: #fff;
+  text-decoration: double;
+}
+
+/*# sourceMappingURL=header.css.map */
