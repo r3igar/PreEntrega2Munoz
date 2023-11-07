@@ -1,42 +1,26 @@
 header {
-    background-color:#1B1919;
+    background-color: #1B1919;
     width: 100%;
     position: fixed;
     top: 0;
     left: 0;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-between; /* Cambiar a 'space-between' para espaciar los elementos */
     align-items: center;
-    list-style: none;
+    padding: 10px; /* Agregar un espacio alrededor del contenido del encabezado */
+  }
+  
+  nav ul {
+    list-style: none; /* Quitar la numeración de la lista */
+    padding: 0; /* Quitar el relleno predeterminado de la lista */
+  }
+  
+  nav li {
+    display: inline; /* Hacer que los elementos de la lista se muestren en línea */
+    margin-right: 20px; /* Agregar margen entre los elementos de la lista */
+  }
+  
+  nav a {
     text-decoration: none;
-    grid-area: header;
-    a {
-        text-decoration: none;
-        img {
-            padding: 0px 20px;
-            width: 45px !important;
-        }
-        ol {
-            list-style-type: none;
-            display: flex;
-            flex-direction: row;
-            padding: 0 20px;
-        }
-        ol li {
-            padding: 0 10px;
-        }
-        .menu-item a {
-            list-style-type: none;
-            text-decoration: none;
-            font-size: 18px;
-            color:#fff;
-        }
-        .titulo-header{
-            color: #fff;
-            text-decoration: double;
-           }
-
-    }
-}
+    color: #ffffff; /* Cambiar el color de texto a blanco */
+  }
