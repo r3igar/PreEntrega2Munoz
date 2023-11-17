@@ -1,0 +1,55 @@
+.indexflex {
+    display: flex;
+    align-items: center; // Alinea los elementos al centro horizontalmente
+  
+    @media (max-width: 768px) {
+      flex-direction: column; // Cambia la dirección a fila en pantallas más grandes
+      // Distribuye los elementos horizontalmente
+    }
+  }
+  
+  .boton-gm,
+  .boton-rp {
+    margin-bottom: 10px; // Agrega margen inferior para separar los botones
+  
+    @media (max-width: 768px) {
+      width: 30rem;
+      margin-top: 0; // Elimina el margen superior en pantallas más grandes
+    }
+  }
+  
+  .contenedor-img {
+    margin-bottom: 20px; // Agrega margen inferior para separar la imagen del resto
+  
+    @media (max-width: 768px) {
+      width: 20rem;
+    }
+  }
+  
+  .rp {
+    display: flex;
+  
+    @media (max-width: 768px) {
+      flex-direction: column; // Cambia la dirección a fila en pantallas más grandes
+      justify-content: space-between;
+    }
+  
+    h2 {
+      flex: 1; // Para que todos ocupen el mismo espacio y tengan el mismo tamaño
+      padding-left: 5rem;
+  
+      @media (max-width: 768px) {
+        padding-left: 0;
+      }
+    }
+  }
+  
+  .imagen-player {
+    width: 80%;
+    height: 50%;
+  
+    @media (max-width: 768px) {
+      // Puedes agregar reglas adicionales para pantallas más pequeñas si es necesario
+    }
+  }
+  

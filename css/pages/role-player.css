@@ -1,0 +1,15 @@
+.rp {
+  display: flex;
+  justify-content: space-between;
+}
+.rp h2 {
+  flex: 1;
+  padding-left: 5rem;
+}
+
+.imagen-player {
+  width: 80%;
+  height: 50%;
+}
+
+/*# sourceMappingURL=role-player.css.map */

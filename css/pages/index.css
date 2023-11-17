@@ -1,0 +1,32 @@
+.indexflex {
+  display: flex;
+  align-items: center;
+}
+
+.boton-gm,
+.boton-rp {
+  margin-bottom: 10px;
+}
+
+.contenedor-img {
+  margin-bottom: 20px;
+}
+
+.rp {
+  display: flex;
+}
+
+li {
+  color: #fff;
+}
+
+main h1 {
+  color: green;
+  font-size: xx-large;
+}
+main p {
+  color: white;
+  margin-left: 14rem;
+}
+
+/*# sourceMappingURL=index.css.map */

@@ -45,3 +45,20 @@ iframe {
     width: 100%;
     height:315px;
 }
+.personaje, .personajegoblin, .personaje-lol {
+  .card {
+    flex: 0 0 18rem;
+    margin-right: 10px;
+    background-color: #1B1919;
+    transition: all 0.3s ease;
+
+    &:hover {
+      transform: scale(1.1); /* Puedes ajustar el valor según el efecto que desees, este ejemplo aumenta el tamaño al 110% */
+    }
+  }
+}
+
+iframe {
+  width: 100%;
+  height: 315px;
+}

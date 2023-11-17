@@ -31,6 +31,10 @@ h1 {
   margin-bottom: 20px;
 }
 
+.contacto h1 {
+  color: black;
+}
+
 input[type=text],
 input[type=password],
 textarea {

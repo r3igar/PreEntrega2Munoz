@@ -1,0 +1,15 @@
+.rp { // ROLE PLAYER
+    display: flex;
+    justify-content: space-between;
+   
+    h2 {
+      flex: 1; // Para que todos ocupen el mismo espacio y tengan el mismo tamaño
+      padding-left: 5rem;
+    }
+  }
+  
+  .imagen-player {
+    width: 80%;
+    height: 50%;
+  }
+  
